@@ -56,7 +56,6 @@
   <img src="Pictures/Rigidbody.PNG" alt="Unity Editor" title="Unity Editor" width="300">
   <img src="Pictures/Sphere_Collider.PNG" alt="Unity Editor" title="Unity Editor" width="300">
   
-
 ### Typical Setup
 1. Add a **Plane** (ground).
 2. Add a **Sphere** (object).
