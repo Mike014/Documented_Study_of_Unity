@@ -49,6 +49,16 @@
 
 ---
 
+## 5. Parenting in Unity
+
+- Parenting links objects so children follow the parent’s **position, rotation, and scale**.  
+- Example: make a Cube (Item) a child of a Capsule (Player) → the Item moves with the Player.  
+- **Local Transform** shows values relative to the parent, not world space.  
+- Empty GameObjects are useful as parents to organize or group parts (e.g., a Sword).  
+- Complex objects (like a Sword) are built by combining children (Handle, Guard, Blade) under one parent.
+
+---
+
 ## Summary
 - **Move** → W key (arrows).  
 - **Rotate** → E key (rings).  
