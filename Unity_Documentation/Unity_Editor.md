@@ -14,7 +14,7 @@
 
 3. **Main Windows**
 
-<img src="/Pictures/Unity_Editor.png" alt="Unity Editor" title="Unity Editor">
+<img src="/Pictures/Unity_Editor.PNG" alt="Unity Editor" title="Unity Editor">
 
 * **Hierarchy**: List of all objects in the scene (e.g., Camera, Lights).
 * **Scene View**: The view of the game world, where you can move and select objects.
