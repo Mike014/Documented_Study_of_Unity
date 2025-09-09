@@ -14,7 +14,7 @@
 
 ## 3. Main Windows
 
-<img src="Pictures/Unity_Editor.PNG" alt="Unity Editor" title="Unity Editor" width="700">
+
 
 - **Hierarchy** → List of all objects in the scene (e.g., Camera, Lights).  
 - **Scene View** → A 3D view of the game world, where you can move and select objects.  
@@ -43,7 +43,7 @@
 - **Q/E** → move down/up.  
 - **Middle mouse drag** → pan the view.  
 
-<img src="Pictures/Gizmo_Perspective.PNG" alt="Orientation Gizmo" title="Orientation Gizmo" width="400">
+
 
 ---
 
@@ -70,3 +70,68 @@ Unity is organized into **windows/panels**, each serving a different purpose:
 - viewing/debugging errors  
 
 Working with these windows together allows you to **build, visualize, and manage your game effectively**.
+
+
+
+# Unity Transform Basics
+
+## 1. Coordinate System
+- Unity uses a **3D coordinate system** with **X, Y, Z** axes.  
+- Object positions are defined as `(x, y, z)`.  
+- Example: `(0,1,0)` means the object is **1 unit above** the origin.
+
+<img src="Pictures/Unity_Editor.PNG" alt="Unity Editor" title="Unity Editor" width="700">
+
+---
+
+## 2. Moving Objects
+- **Inspector**: change `Transform > Position` values (X, Y, Z).  
+- **Move Gizmo**:  
+  - Red = X (left/right)  
+  - Green = Y (up/down)  
+  - Blue = Z (forward/back)  
+  - Remember: **XYZ = RGB**.  
+- Use **squares** between arrows to move along planes (e.g., XZ plane).  
+- Delete objects with **Delete key** or right-click → *Delete*.  
+- Undo with **Ctrl+Z** (Windows) / **Cmd+Z** (Mac).
+
+<img src="Pictures/Gizmo_Perspective.PNG" alt="Orientation Gizmo" title="Orientation Gizmo" width="400">
+---
+
+## 3. Rotating Objects
+- **Rotation Tool (E key)** → gizmo with 3 colored rings.  
+  - Red = X axis, Green = Y axis, Blue = Z axis.  
+- Drag a ring to rotate around that axis.  
+- **Inspector**: adjust `Transform > Rotation` in degrees.  
+- Inner white circle = free rotation relative to Scene view.  
+- Rotation affects **local space** (arrows follow the object’s orientation).  
+- Switch between **Local** and **Global** in the Scene toolbar.
+
+---
+
+## 4. Scaling Objects
+- **Scale Tool (R key)** → gizmo with cubes at the ends.  
+  - Drag a cube to scale along that axis.  
+  - White cube in the center → uniform scaling (all axes).  
+- **Inspector**: `Transform > Scale`.  
+  - `(1,1,1)` = 100% (default size).  
+  - `(2,2,2)` = 200% (double size).  
+  - `(0,0,0)` = invisible.  
+- Lock uniform scaling with the **chain icon** in Inspector.
+
+---
+
+## 5. Stick Figure Challenge (Practice)
+- **Body** → Cube scaled on Y.  
+- **Legs** → duplicate Cube, scale smaller, rotate ~30°, move under body.  
+- **Arms** → duplicate Cube, scale on X, move up.  
+- **Head** → Sphere, moved on top, scaled down.  
+
+---
+
+## 🔑 Summary
+- **Move** → W key (arrows).  
+- **Rotate** → E key (rings).  
+- **Scale** → R key (cubes).  
+- Transform tools are controlled through **Inspector** or **Scene gizmos**.  
+- Mastering **Position, Rotation, and Scale** is the foundation of working with GameObjects.
